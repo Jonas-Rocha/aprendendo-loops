@@ -17,3 +17,12 @@ while (execute) {
 
 console.log("Segue o fluxo...");
 
+// Loop infinito
+
+//let value = true;
+
+/*
+while (value) {
+  não vou pedir pra executar nada pra não ficar num loop infinito
+}
+*/
