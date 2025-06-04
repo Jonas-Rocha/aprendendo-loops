@@ -103,3 +103,27 @@ for (let index in students) {
   // console.log(index);
   console.log(students[index]);
 }
+
+// for...of itera sobre valores de um objeto iterável.
+
+/*Nesta aula, iremos aprender sobre a estrutura de repetição for of, que itera sobre os valores de um objeto iterável. 
+Diferente do for in, o for off itera sobre os valores, não sobre as propriedades. É importante que o objeto seja iterável, como um array.*/
+
+let leitores = ["Jonas", "Andressa", "Ana"];
+
+// pode ser index ou i of leitores também, tanto faz.
+for (let leitor of leitores) {
+  console.log(leitor);
+}
+
+let user = [
+  {
+    name: "Jonas",
+    email: "jonasrpnstudy@gmail.com",
+  },
+];
+
+// NÃO FUNCIONARIA SE O NOSSO OBJETO NÃO TIVESSE DENTRO DE UMA LISTA "ARRAY", POIS OBJETO NÃO É ITERÁVEL!
+for (let value of user) {
+  console.log(value.name, value.email);
+}
