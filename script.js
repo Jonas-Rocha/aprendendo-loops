@@ -77,3 +77,29 @@ let number = 7;
 for (step = 0; step <= 10; step++) {
   console.log(`${number} x ${step} = ${number * step}`);
 }
+
+// for...in  executa iterações a partir de um objeto e percorre as propriedades.
+
+let person = {
+  name: "Jonas",
+  surname: "Rocha",
+  email: "jonasrpnstudy@gmail.com",
+};
+
+let steps = 1;
+for (let prop in person) {
+  console.log(steps);
+  // Exibe o nome da propriedade
+  console.log(prop);
+
+  // Exibe o conteúdo da propriedade
+  console.log(person[prop]); // Aqui a notação de colchetes [] é muito melhor de usar do que a notação de ponto .
+  steps++; // fica verificando e iteragindo
+}
+
+let students = ["Jonas", "Andressa", "João"];
+
+for (let index in students) {
+  // console.log(index);
+  console.log(students[index]);
+}
