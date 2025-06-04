@@ -164,3 +164,17 @@ for (let i = 0; i < 10; i++) {
 
   console.log(i); // nem chega a executar o 5 pois quando encontra o break ele já para de executar.
 }
+
+/* Continue encerra (pula) a execução das instruções na iteração
+atual e continua a execução do loop com a próxima iteração. */
+
+/*Agora vamos aprender sobre a palavra reservada continue que pode ser utilizada em estruturas de repetição para pular uma iteração e ir para a próxima, sem encerrar o loop inteiro como o break faz. Quando a condição definida é atendida, o continue é acionado, pulando a execução da iteração atual. Isso é útil para evitar a execução de determinadas partes do código em loops.
+ */
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    continue; // Pulou o coitado do 5 kkkkkkkkk
+  }
+
+  console.log(i);
+}
